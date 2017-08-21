@@ -1,0 +1,37 @@
+/*
+ * CSS Dependencies
+ */
+ @import "../../../styles/globals";
+
+ /*
+ * hotelList
+ */
+.am_hotelList{
+  &__container{
+    article{
+      background-color: @white;
+      box-shadow: @box_shadow;
+      display: flex;
+      text-align: left;
+      max-width: 75rem;
+      max-height: 21rem;
+      margin: auto;
+      color: hsl(43, 10%, 28%);
+
+      & > div{
+        width: 25rem;
+        padding: .8rem;
+      }
+      h4{
+        margin: 0;
+      }
+      .am_resultSection__item_imageContainer{
+        max-width: 31rem;
+        padding: 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

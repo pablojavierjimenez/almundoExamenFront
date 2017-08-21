@@ -1,0 +1,188 @@
+// VARIABLES
+@import "../styles/globals";
+
+.am_wrapper{
+  padding: 1rem;
+  max-width: 100rem;
+  margin: 0 auto;
+
+  /*
+   * breadcrumSection
+   */
+  .am_breadcrumSection{
+    &__container{
+      font-size: 1rem;
+      padding: 0  1rem 1rem 0;
+
+      span:after{
+        content: "/";
+        margin: 0 .2rem;
+      }
+
+      span:last-child:after{
+        content: "";
+      }
+
+      a,
+      a:visited{
+        text-decoration: none;
+        color:hsl(199, 68%, 52%);;
+      }
+    }
+  }
+
+  /*
+   * searchSection
+   */
+  .am_searchSection{
+    &__container{
+      border: 1px solid hsl(0, 0%, 80%);
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      & > div{
+        display: flex;
+        span.am_searchSection__parameters{
+          margin-right: 2.3rem;
+        }
+      }
+      h3.am_searchSection__title {
+        font-size: 1.8rem;
+        color: hsl(0, 0%, 52%);
+        margin: .5rem 0 1rem;
+      }
+      @media only screen and (max-width: @bpt_tablet_landscape){
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid hsl(0, 0%, 80%);
+        box-shadow:none;
+        padding: 1rem;
+        a{
+          margin: auto;
+        }
+      }
+    }
+  }
+
+
+  /*
+   * filtersAndResults
+   */
+  .am_filtersAndResults{
+    &__container{
+      display: flex;
+      @media only screen and (max-width: @bpt_tablet_landscape){
+        display: block;
+      }
+      .am_mapAndFilter{
+        min-width: 24rem;
+        margin: 1.2rem 1.2rem 1.2rem 0;
+        @media only screen and (max-width: @bpt_tablet_landscape){
+          margin: 1.2rem 0;
+        }
+
+        /*
+        * mapSection
+        */
+        .am_mapSection{
+          &__container{
+            box-shadow: 0px 0px 5px 2px hsl(0, 0%, 80%);
+            background-color: #ffffff;
+            font-size: 1.2rem;
+            padding: 1rem 0;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            @media only screen and (max-width: @bpt_tablet_landscape){
+              background-color: transparent;
+              border: none;
+              border-bottom: 1px solid hsl(0, 0%, 80%);
+              box-shadow:none;
+              padding: 1rem;
+              a{
+                margin: auto;
+              }
+            }
+          }
+        }
+
+        /*
+        * filtersSection
+        */
+        .am_filtersSection{
+          &__container{
+            font-size: 1.2rem;
+            h3&__sectionTitle {
+              color:hsl(0, 0%, 27%);
+              font-size: 1.4rem;
+              margin-bottom: .8rem;
+            }
+            @media only screen and (max-width: @bpt_tablet_landscape){
+              background-color: transparent;
+              border: none;
+              border-bottom: 1px solid hsl(0, 0%, 80%);
+              box-shadow:none;
+              padding: 1rem;
+              a{
+                margin: auto;
+              }
+            }
+          }
+          &__sortBy_hotelName{
+            background-color: @white;
+            box-shadow: 0px 0px 5px 2px hsl(0, 0%, 80%);
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  * resultSection
+  */
+  .am_resultSection{
+    &__container{
+      /*
+      * sortResult
+      */
+      .am_sortResult {
+        padding: 1rem;
+        justify-content: flex-end;
+        display: flex;
+        padding: 1.2rem .5rem;
+        justify-content: flex-end;
+        display: flex;
+        @media only screen and (max-width: @bpt_tablet_landscape){
+          background-color: transparent;
+          justify-content: center;
+        }
+      }
+      article{
+        background-color: @white;
+        box-shadow: 0px 0px 5px 2px hsl(0, 0%, 80%);
+        display: flex;
+        text-align: left;
+        max-width: 75rem;
+        max-height: 21rem;
+        margin: auto;
+        color: hsl(43, 10%, 28%);
+
+        & > div{
+          width: 25rem;
+          padding: .8rem;
+        }
+        h4{
+          margin: 0;
+        }
+        .am_resultSection__item_imageContainer{
+          max-width: 31rem;
+          padding: 0;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+}

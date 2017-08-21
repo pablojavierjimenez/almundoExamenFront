@@ -1,0 +1,92 @@
+
+<aside class="am_mapAndFilter__container">
+
+  <!-- mapSection -->
+  <section class="am_mapSection__container am_displayOnMobile--row">
+    <iframe
+      class="am_displayOnMobile--hidde"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d821.070517719524!2d-58.37839936980962!3d-34.597028177978636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1503304456466"
+      width="240"
+      height="100"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen>
+    </iframe>
+    <a href="#">Ver hoteles en el mapa</a>
+  </section>
+
+  <!-- filters -->
+  <section class="am_filtersSection__container am_displayOnMobile--row">
+    <h3 class="am_filtersSection__sectionTitle am_displayOnMobile--hidde">Filtrar</h3>
+
+    <!-- sortBy_hotelName -->
+    <div class="am_filtersSection__sortBy_hotelName am_displayOnMobile--hidde">
+      <div class="am_filtersSection__title">
+        <span class="am_icon__search am_displayOnMobile--hidde">&#128270;</span>
+        <span>Nombre del Hotel</span>
+      </div>
+      <div class="am_filtersSection__filter am_displayOnMobile--hidde">
+        <label for="am_filtersSection__hotelName_value am_displayOnMobile--hidde">
+          <input id="am_filtersSection__hotelName_value" type="text" placeholder="ingrese el nombre del hotel">
+          <button>Aceptar</button>
+        </label>
+      </div>
+    </div>
+
+    <!-- sortBy_price -->
+    <div class="am_filtersSection__sortBy_price am_displayOnMobile--hidde">
+      <div class="am_filtersSection__title">
+        <span class="am_icon__search"></span>
+        <span>Precio por Noche</span>
+      </div>
+      <div class="am_filtersSection__filter am_displayOnMobile--hidde">
+        <label for="am_filtersSection__priceMin_value am_displayOnMobile--hidde">
+          <input id="am_filtersSection__priceMin_value" type="range">
+        </label>
+      </div>
+    </div>
+
+    <!-- sortBy_rank -->
+    <div class="am_filtersSection__sortBy_rank am_displayOnMobile--hidde">
+        <div class="am_filtersSection__title">
+          <span class="am_icon__search"></span>
+          <span>Estrellas</span>
+        </div>
+        <div class="am_filtersSection__filter am_displayOnMobile--hidde">
+          <div>
+            <input id="am_filtersSection__rank_allStar" type="checkbox">
+            <label for="am_filtersSection__rank_allStar">Todas las estrellas</label>
+            <span class="am_filtersSection__rank_quantity">(23)</span>
+          </div>
+          <div>
+            <input id="am_filtersSection__rank_fiveStar" type="checkbox">
+            <label class="am_filtersSection__filterStar" for="am_filtersSection__rank_fiveStar">★★★★★</label>
+            <span class="am_filtersSection__rank_quantity">(23)</span>
+          </div>
+          <div>
+            <input id="am_filtersSection__rank_fourStar" type="checkbox">
+            <label class="am_filtersSection__filterStar" for="am_filtersSection__rank_fourStar">★★★★</label>
+            <span class="am_filtersSection__rank_quantity">(23)</span>
+          </div>
+          <div>
+            <input id="am_filtersSection__rank_threeStar" type="checkbox">
+            <label class="am_filtersSection__filterStar" for="am_filtersSection__rank_threeStar">★★★</label>
+            <span class="am_filtersSection__rank_quantity">(23)</span>
+          </div>
+          <div>
+            <input id="am_filtersSection__rank_twoStar" type="checkbox">
+            <label class="am_filtersSection__filterStar" for="am_filtersSection__rank_twoStar">★★</label>
+            <span class="am_filtersSection__rank_quantity">(23)</span>
+          </div>
+          <div>
+            <input id="am_filtersSection__rank_oneStar" type="checkbox">
+            <label class="am_filtersSection__filterStar" for="am_filtersSection__rank_oneStar">★</label>
+            <span class="am_filtersSection__rank_quantity">(23)</span>
+          </div>
+        </div>
+    </div>
+
+    <a class="am_displayOnMobile--visible"href="#">Filtros</a>
+  </section>
+
+</aside>

@@ -1,0 +1,29 @@
+/*
+ * CSS Dependencies
+ */
+@import "../../../styles/globals";
+
+/*
+  * breadcrumSection
+  */
+  .am_breadcrumSection{
+  &__container{
+    font-size: 1.2rem;
+    padding: 0  1rem 1rem 0;
+
+    span:after{
+      content: "/";
+      margin: 0 .2rem;
+    }
+
+    span:last-child:after{
+      content: "";
+    }
+
+    a,
+    a:visited{
+      text-decoration: none;
+      color:hsl(199, 68%, 52%);;
+    }
+  }
+}

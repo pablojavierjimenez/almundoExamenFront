@@ -1,0 +1,100 @@
+/*
+* CSS Dependencies
+*/
+@import "../../../styles/globals";
+
+/*
+* filtersAndResults
+*/
+.am_mapAndFilter{
+  &__container{
+    min-width: 24rem;
+    margin: 1.2rem 1.2rem 1.2rem 0;
+    @media only screen and (max-width: @bpt_tablet_landscape){
+      margin: 1.2rem 0;
+    }
+
+    /*
+    * mapSection
+    */
+    .am_mapSection__container{
+      box-shadow: @box_shadow;
+      background-color: #ffffff;
+      font-size: 1.2rem;
+      padding: 1rem 0;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      @media only screen and (max-width: @bpt_tablet_landscape){
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid hsl(0, 0%, 80%);
+        box-shadow:none;
+        padding: 1rem;
+        a{
+          margin: auto;
+        }
+      }
+    }
+
+    /*
+    * filtersSection
+    */
+    .am_filtersSection{
+      &__container{
+        font-size: 1.2rem;
+
+        h3&__sectionTitle {
+          color:hsl(0, 0%, 27%);
+          font-size: 1.4rem;
+          margin-bottom: .8rem;
+        }
+
+        input#am_filtersSection__hotelName_value {
+          max-width: 13.5rem;
+          padding: .3rem;
+          margin-right: .5rem;
+        }
+
+        @media only screen and (max-width: @bpt_tablet_landscape){
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid hsl(0, 0%, 80%);
+          box-shadow:none;
+          padding: 1rem;
+          a{
+            margin: auto;
+          }
+        }
+      }
+      &__title {
+        color: hsl(199, 68%, 52%);
+        font-weight: bolder;
+        padding: .5rem 0;
+      }
+
+      &__sortBy_hotelName,
+      &__sortBy_rank,
+      &__sortBy_price{
+        background-color: @white;
+        box-shadow: @box_shadow;
+        padding: 1rem;
+      }
+
+      &__sortBy_rank{
+        .am_filtersSection__filter{
+          div{
+            margin: .5rem;
+          }
+          label{
+            color: @black_medium;
+          }
+          label.am_filtersSection__filterStar{
+            color: @yelow;
+            font-size: 1.4rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

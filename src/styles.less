@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "styles/globals";
+
+html{
+    font-size: @rootFontsize;
+}
+
+body {
+    background-color: @beige;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #31a3d8;
+}
+
+button {
+  padding: .5rem;
+  min-height: 2.4rem;
+  background-color: hsl(218, 100%, 23%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 -2px 0 #00163c inset;
+  border: none;
+  border-radius: .3rem;
+  font-weight: bold;
+}
+button:hover {
+  background-color: hsl(218, 48%, 39%);
+}
+.am_displayOnMobile--visible{
+  display: none;
+}
+@media only screen and (max-width: @bpt_tablet_landscape) {
+
+      .am_displayOnMobile--hidde{
+        display: none;
+      }
+
+      .am_displayOnMobile--visible{
+        display: block;
+      }
+
+      .am_displayOnMobile--row{
+        background-color: #f4f4f4;
+        padding: .8rem;
+        text-align: center;
+        font-size: 1.8rem;
+        border-bottom: .1rem @light_blue solid;
+      }
+
+      .am_displayOnMobile--row{
+        a{
+          color:@light_blue;
+          text-decoration: none;
+        }
+        a:visited{
+          color:@light_blue;
+        }
+
+      }
+}

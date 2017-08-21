@@ -1,0 +1,32 @@
+/*
+ * CSS Dependencies
+ */
+ @import "../../../styles/globals";
+
+/*
+* resultSection
+*/
+.am_resultSection{
+  &__container{
+    /*
+    * sortResult
+    */
+    .am_sortResult {
+      padding: 1rem;
+      justify-content: flex-end;
+      padding: 1.2rem .5rem;
+      display: flex;
+      align-items: center;
+      span,
+      select{
+        padding: .5rem;
+      }
+      @media only screen and (max-width: @bpt_tablet_landscape){
+        background-color: transparent;
+        justify-content: center;
+      }
+    }
+
+
+  }
+}

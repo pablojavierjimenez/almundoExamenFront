@@ -1,0 +1,38 @@
+/*
+ * CSS Dependencies
+*/
+@import "../../../styles/globals";
+
+/*
+ * searchSection
+*/
+.am_searchSection{
+  &__container{
+    border: 1px solid hsl(0, 0%, 80%);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    & > div{
+      display: flex;
+      span.am_searchSection__parameters{
+        margin-right: 2.3rem;
+      }
+    }
+    h3.am_searchSection__title {
+      font-size: 1.8rem;
+      color: hsl(0, 0%, 52%);
+      margin: .5rem 0 1rem;
+    }
+    @media only screen and (max-width: @bpt_tablet_landscape){
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid hsl(0, 0%, 80%);
+      box-shadow:none;
+      padding: 1rem;
+      a{
+        margin: auto;
+      }
+    }
+  }
+}
+
