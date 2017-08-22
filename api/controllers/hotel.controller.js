@@ -3,7 +3,7 @@ const hotelListData = require('../db.mocks/hotelListData.mock');
 
 exports.getHotelsList = (req, res) => {
   try {
-    res.json(hotelListData);
+    res.json(hotelListData.hotels);
   } catch (error) {
     res.send(err);
   }

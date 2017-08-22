@@ -1,11 +1,12 @@
 
 <section class="am_hotelList__container">
-  <article class="am_resultSection__item">
+  <article class="am_resultSection__item"  *ngFor="let res of searchRes">
       <div class="am_resultSection__item_imageContainer">
           <img src="./assets/img/hotel.jpg" alt="">
       </div>
       <div class="am_resultSection__item_information">
-          <h4>{{simpleInput_String}}</h4>
+          <h4>{{title}}</h4>
+          <pre>{{hotels}}</pre>
           <div>★★★</div>
           <div>solo habitacion</div>
           <div>

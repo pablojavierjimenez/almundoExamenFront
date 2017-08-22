@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
@@ -27,6 +28,7 @@ import { HotelsService } from './Services/hotels.service';
     SortListComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule
   ],
   providers: [HotelsService],
