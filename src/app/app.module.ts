@@ -11,6 +11,7 @@ import { ResultsComponent } from './Components/results/results.component';
 import { HotelListComponent } from './Components/hotel-list/hotel-list.component';
 import { FiltersComponent } from './Components/filters/filters.component';
 import { SortListComponent } from './Components/sort-list/sort-list.component';
+import { HotelsService } from './Services/hotels.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { SortListComponent } from './Components/sort-list/sort-list.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [HotelsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
