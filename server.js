@@ -9,9 +9,13 @@ const express = require('express');
 /**
  * Get Api Router
  */
-const api = require('./api/routers/api');
 const app = express();
-//console.log(api);
+const apiRoutes = require('./api/routers/api.routes'); //importing route
+
+/**
+ * Set api routes
+ */
+apiRoutes(app);
 
 /**
  * Parsers for POST data
@@ -24,10 +28,6 @@ const app = express();
  */
 app.use(express.static(path.join(__dirname, 'dist')));
 
-/**
- * Set our api routes
- */
-app.use('/api', api);
 
 /**
  * Catch all other routes and return the index file
@@ -50,4 +50,4 @@ const server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-server.listen(port, () => console.log(`API running on localhost:${port}`));
+server.listen(port, () => console.log(`\n APP running on localhost:${port}\n API running on localhost:${port}/api`));
