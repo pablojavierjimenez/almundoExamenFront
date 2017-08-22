@@ -11,20 +11,53 @@
     article{
       background-color: @white;
       box-shadow: @box_shadow;
+      color: hsl(43, 10%, 28%);
       display: flex;
-      text-align: left;
       max-width: 75rem;
       max-height: 21rem;
       margin: auto;
-      color: hsl(43, 10%, 28%);
+      margin-bottom: 2.5rem;
+      text-align: left;
 
       & > div{
         width: 25rem;
         padding: .8rem;
+        .am_starsContainer{
+          color: @yellow;
+        }
+        .am_rentType{
+          color: @orange;
+        }
       }
       h4{
         margin: 0;
       }
+      button.am_resultSection__priceData{
+        width: 14rem;
+        height: 3rem;
+        font-size: 2rem;
+        margin: .5rem;
+      }
+      .am_resultSection__item_priceData {
+        font-size: 1rem;
+        text-align: center;
+        border-left: dashed .1rem hsl(0, 0%, 80%);
+
+        & > div {
+          padding: .2rem;
+        }
+        .am_resultSection__priceData_moneyType{
+          font-weight: lighter;
+          font-size: 2rem;
+          color: @orange;
+        }
+        .am_resultSection__priceData_price{
+          font-weight: bolder;
+          font-size: 3rem;
+          color: @orange;
+        }
+      }
+
       .am_resultSection__item_imageContainer{
         max-width: 31rem;
         padding: 0;

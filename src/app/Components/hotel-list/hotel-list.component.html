@@ -1,14 +1,13 @@
 
 <section class="am_hotelList__container">
-  <article class="am_resultSection__item"  *ngFor="let res of searchRes">
+  <article class="am_resultSection__item"  *ngFor="let hotel of hotels">
       <div class="am_resultSection__item_imageContainer">
-          <img src="./assets/img/hotel.jpg" alt="">
+          <img src="http://lorempixel.com/310/210/city/" alt="">
       </div>
       <div class="am_resultSection__item_information">
-          <h4>{{title}}</h4>
-          <pre>{{hotels}}</pre>
-          <div>★★★</div>
-          <div>solo habitacion</div>
+          <h4>{{hotel.name}}</h4>
+          <div class='am_starsContainer'>★★★</div>
+          <div class='am_rentType'>solo habitacion</div>
           <div>
               <span>★</span>
               <span>★</span>
@@ -19,8 +18,8 @@
       <div class="am_resultSection__item_priceData">
           <div class="am_resultSection__priceData_priceBy">Precio por noche por habitacion</div>
           <div class="am_resultSection__priceData_amount">
-              <span class="am_resultSection__priceData_amount"></span>
-              <span class="am_resultSection__priceData_amount"></span>
+              <span class="am_resultSection__priceData_moneyType">ARS</span>
+              <span class="am_resultSection__priceData_price">{{hotel.price}}</span>
           </div>
           <div class="am_resultSection__priceData_tax">inpuestos y tasas no incluidos</div>
           <button class="am_resultSection__priceData">Ver hotel</button>
